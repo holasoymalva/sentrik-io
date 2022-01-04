@@ -4,6 +4,10 @@
 
 * General information about : `Mars Weather`
 
+## Tech Stack
+* Heroku
+* Flask 
+
 ### Sources: 
 
 * [Nasa Api](https://api.nasa.gov/)
