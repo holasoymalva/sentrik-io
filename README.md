@@ -2,6 +2,8 @@
 
 > Web app with autmatic daily updates about Astronomy for more than 5 diferent API's and Data Sets.
 
+> 💡 Idea: Create an automatic daily update of data with a cron task that will update the file `general.json` in `/data` path. Probably build in the `hostinger`.
+
 * General information about : `Mars Weather`
 
 ## Tech Stack
