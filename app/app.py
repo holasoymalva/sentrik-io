@@ -1,17 +1,15 @@
+import os
 import json
 import requests
 
 url = "https://fakestoreapi.com/products"
 
-def jprint(obj):
-    # create a formatted string of the Python JSON object
-    jsonData = json.dumps(obj, sort_keys=True, indent=4)
-    print(jsonData)
-    return jsonData
+save_path = './data'
+file_name = "general.json"
+
+completeName = os.path.join(save_path, file_name)
 
 response = requests.request("GET", url)
 
-if(response.status_code == 200):
-    jsonResponse = jprint(response.json())
-    with open('data/data.json', 'w') as json_file:
-        json.dump(jsonResponse, json_file)
+with open(completeName, 'w') as json_file:
+    json.dump(response.json(), json_file)
