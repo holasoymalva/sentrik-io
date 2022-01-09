@@ -13,5 +13,5 @@ response = requests.request("GET", url)
 
 if(response.status_code == 200):
     jsonResponse = jprint(response.json())
-    with open('data.json', 'w') as json_file:
+    with open('data/data.json', 'w') as json_file:
         json.dump(jsonResponse, json_file)
