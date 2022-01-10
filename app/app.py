@@ -2,7 +2,9 @@ import os
 import json
 import requests
 
-url = "https://fakestoreapi.com/products"
+fakerUrl = "https://fakestoreapi.com/products"
+demoUrl = "https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0"
+url = demoUrl
 
 save_path = './data'
 file_name = "general.json"
